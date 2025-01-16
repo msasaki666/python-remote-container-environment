@@ -1,0 +1,34 @@
+{
+  "name": "app",
+  "dockerComposeFile": [
+    "../compose.yaml"
+  ],
+  "service": "app",
+  "workspaceFolder": "/app",
+  "customizations": {
+    "vscode": {
+      "settings": {
+        // "dotfiles.repository": "msasaki666/dotfiles",
+        // "dotfiles.targetPath": "~/dotfiles",
+        // "dotfiles.installCommand": "~/dotfiles/install.sh",
+        "editor.formatOnSave": true,
+        "editor.guides.bracketPairs": true,
+        "python.testing.unittestEnabled": false,
+        "python.testing.pytestEnabled": true,
+        "python.formatting.provider": "black",
+        "mypy-type-checker.args": ["--disallow-untyped-defs"],
+        "mypy-type-checker.importStrategy": "fromEnvironment"
+      },
+      "extensions": [
+        "ms-python.python",
+        "ms-python.mypy-type-checker",
+        "editorconfig.editorconfig",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "donjayamanne.githistory",
+        "charliermarsh.ruff",
+        "mosapride.zenkaku"
+      ]
+    }
+  }
+}
